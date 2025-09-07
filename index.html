@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kings bedstore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+
+    <!-- The timer part  -->
+    <div id="navbar1">
+  <div class="timer-box">
+    Time Remaining: 
+    <span class="time">
+      <span id="hours" class="big"></span>
+      <span class="small">hr</span>
+    </span>
+    <span class="time">
+      <span id="minutes" class="big"></span>
+      <span class="small">min</span>
+    </span>
+    <span class="time">
+      <span id="seconds" class="big"></span>
+      <span class="small">sec</span>
+    </span>
+  </div>
+</div>
+
+<!-- logo and search options -->
+ <div class="navbar2">
+  <div id="search">
+    <input type="text" id="user-input" placeholder="Search for your bdroom upgrade">
+     <i class="fa-solid fa-magnifying-glass" id="search-icon"></i> </div>
+     <img id="logo" src="img/Frame 1000007347.png">
+
+     <div id="right-icons">
+      <a href="#" id="openLogin"><i class="fa-regular fa-user"></i></a>
+<!-- Login Modal -->
+<div class="login-modal" id="loginModal">
+  <div class="login-box">
+    <span class="close-btn" id="closeLogin">&times;</span>
+    <div class="login-container">
+      <!-- Left Side -->
+      <div class="login-image">
+        <img src="img/Frame 1000007069.png" alt="Bed">
+      </div>
+
+      <!-- Right Side -->
+      <div class="login-form" id="loginForm">
+        <h2>Login</h2>
+
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="********" required>
+
+        <a href="#" id="toSignup">Signup</a> 
+        <button class="btn">Login</button>
+        <a href="#" id="toForgot">Forgot Password?</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="signup-modal" id="signupModal">
+  <div class="login-box">
+    <span class="close-btn" id="closeSignup">&times;</span>
+    <div class="login-container">
+      <div class="login-image">
+        <img src="img/Frame 1000007069.png" alt="Bed">
+      </div>
+
+      <div class="login-form" id="signupForm">
+        <h2>Sign Up</h2>
+
+        <label>Name</label>
+        <input type="text" placeholder="Your Name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="********" required>
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="********" required>
+
+        <button class="btn">Sign Up</button>
+        <a href="#" id="toLogin">Already have an account? Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div class="forgot-modal" id="forgotModal">
+  <div class="login-box">
+    <span class="close-btn" id="closeForgot">&times;</span>
+    <div class="login-container">
+      <div class="login-image">
+        <img src="img/Frame 1000007069.png" alt="Bed">
+      </div>
+
+      <div class="login-form" id="forgotForm">
+        <h2>Forgot Password</h2>
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com" required>
+        <button class="btn">Send Reset Link</button>
+        <a href="#" id="backToLogin1">Back to Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Change Password Modal -->
+<div class="change-modal" id="changeModal">
+  <div class="login-box">
+    <span class="close-btn" id="closeChange">&times;</span>
+    <div class="login-container">
+      <div class="login-image">
+        <img src="img/Frame 1000007069.png" alt="Bed">
+      </div>
+
+      <div class="login-form" id="changeForm">
+        <h2>Change Password</h2>
+        <label>Old Password</label>
+        <input type="password" placeholder="********" required>
+
+        <label>New Password</label>
+        <input type="password" placeholder="********" required>
+
+        <label>Confirm New Password</label>
+        <input type="password" placeholder="********" required>
+
+        <button class="btn">Change Password</button>
+        <a href="#" id="backToLogin2">Back to Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+             
+
+          <i style="margin-top: 5px;" class="fa-regular fa-heart"></i>
+           <i style="margin-top: 5px;" class="fa-solid fa-bag-shopping"></i>
+     </div>
+ </div>
+              <!-- the list of options blue navbar -->
+              
+
+     <div id="navbar3">
+       <a href="index.html" class="navbarelement">Home</a>
+    <a href="product.html" class="navbarelement">Products</a>
+    <a href="bundle.html" class="navbarelement">Bundle list</a>
+    <a href="about.html" class="navbarelement">About Us</a>
+    <a href="faq.html" class="navbarelement">FAQ</a>
+     <a href="blog.html" class="navbarelement">Blogs</a>
+    <a href="referral.html" class="navbarelement">Referral</a>
+    <a href="contact.html" class="navbarelement">Contact</a>
+     </div>
+    
+<script>
+  const navbar = document.querySelector(".navbar2"); 
+  const dropdown = document.getElementById("navbar3");
+
+  navbar.addEventListener("click", (e) => {
+    // Only trigger when clicking on the leftmost 30px (where ☰ is drawn)
+    if (e.offsetX <= 30) {
+      e.stopPropagation();
+      dropdown.classList.toggle("dropdown");
+    }
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (e) => {
+    if (
+      dropdown.classList.contains("dropdown") &&
+      !dropdown.contains(e.target) &&
+      !navbar.contains(e.target)
+    ) {
+      dropdown.classList.remove("dropdown");
+    }
+  });
+</script>
+
+
+
+    
+
+
+      <!-- yellow navbar -->
+  <div class="info-bar">
+  <div class="left">
+    <img src="img/trustpilot-logo-sml 1.png" alt="Trustpilot" class="trust-logo">
+    <img src="img/Frame 30.png" alt="Stars" class="stars">
+    <span class="text"><b>Rated Excellent</b></span>
+  </div>
+  <div class="right">
+    <div class="item">
+      <i class="fa-solid fa-truck"></i>
+      <span>Buy today, delivered tomorrow</span>
+    </div>
+    <div class="item">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span>Buy now & pay later available</span>
+    </div>
+    <div class="item">
+      <i class="fa-solid fa-shield"></i>
+      <span>5 Year manufacturer's guarantee</span>
+    </div>
+  </div>
+</div>
+</header>
+  <!-- first image -->
+
+  <div class="banner">
+  <img src="img/589576bd7e34e7d63db748cf3ed66439592b4719 (1).png" alt="Banner">
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Discover the Perfect <span class="highlight">Mattress</span> For You</h1>
+    <p>Lörem ipsum oktigt änöheten deciligt till preskap hånde kronade.Fäbelt ikarade dikatust fasamma.</p>
+    <div class="button-container">
+      <a href="product.html">
+  <button class="shop-btn" >Shop Beds</button></a>
+  <a href="product.html"><button class="shop-btn" >Shop Mattresses</button></a>
+</div>
+  </div>
+</div>
+
+  <!-- product part -->
+   
+  <section class="products-section">
+    <h1>Products</h1>
+    <div class="products-container">
+
+      <div class="product-card">
+        <img src="img/bc087f810d002b752eaece8b36d7abee93a4d0d8.png" alt="Mattress">
+        <button>Shop Mattress</button>
+      </div>
+
+      <div class="product-card">
+        <img src="img/98a2cbb773f8c2b7ff8104a9c907ac88722d3267.png" alt="Bed">
+        <button>Shop Beds</button>
+      </div>
+
+      <div class="product-card">
+        <img src="img/3f008900a05a01a62514132a30036a1a238712ff.png" alt="Kid Beds">
+        <button>Shop Kid beds</button>
+      </div>
+
+    </div>
+  </section>
+      <!-- looking for something in particular -->
+ <section class="type-section">
+    <h2>Looking for something in <span class="highlight">Particular</span></h2>
+
+    <div class="bed-carousel">
+      <button class="arrow left" onclick="scrollLeft()">&#8592;</button>
+      
+      <div class="bed-container" id="bedContainer">
+        <div class="type-card">
+          <h3>Single Bed</h3>
+          <p>150cm x 200cm</p>
+          <img src="https://img.icons8.com/ios/100/bed.png" alt="Single Bed">
+        </div>
+        <div class="type-card">
+          <h3>Double Bed</h3>
+          <p>150cm x 200cm</p>
+          <img src="https://img.icons8.com/ios/100/bed.png" alt="Double Bed">
+        </div>
+        <div class="type-card">
+          <h3>Queen Bed</h3>
+          <p>160cm x 200cm</p>
+          <img src="https://img.icons8.com/ios/100/bed.png" alt="Queen Bed">
+        </div>
+        <div class="type-card">
+          <h3>King Bed</h3>
+          <p>180cm x 200cm</p>
+          <img src="https://img.icons8.com/ios/100/bed.png" alt="King Bed">
+        </div>
+        <div class="type-card">
+          <h3>Twin Bed</h3>
+          <p>120cm x 200cm</p>
+          <img src="https://img.icons8.com/ios/100/bed.png" alt="Twin Bed">
+        </div>
+        <div class="type-card">
+          <h3>Sofa Bed</h3>
+          <p>140cm x 180cm</p>
+          <img src="https://img.icons8.com/ios/100/bed.png" alt="Sofa Bed">
+        </div>
+      </div>
+      <button class="arrow right" onclick="scrollRight()">&#8594;</button>
+    </div>
+  </section>
+
+
+    <!-- the recommended section -->
+     <section class="recommended-section">
+    <h2>Our <span class="highlight">Recommended</span> Products</h2>
+
+    <!-- Category Buttons -->
+    <div class="category-buttons">
+      <button class="active">Beds</button>
+      <button>Kids beds</button>
+      <button>Mattresses</button>
+      <button>Furniture</button>
+      <button>Headboards</button>
+      <button>Bedding</button>
+    </div>
+
+    <!-- Scrollable Product List -->
+    <div class="product-scroll">
+      <div class="product-list">
+
+        <!-- Product Card 1 -->
+        <div class="bed-card">
+          <span class="badge">Best seller</span>
+          <img src="img/Component 1.png" alt="Product Image">
+          <h3 style="margin-top: 5px;">Product Name</h3>
+          <p id="desc">Lorem ipsum oktiğt anöheten deciligt till</p>
+          <div class="rating">⭐⭐⭐⭐⭐ (4k)</div>
+          <div class="price">
+            <span class="old-price">$750</span>
+            <span class="new-price">$250</span>
+            <span class="now-from">$500 Now From</span>
+          </div>
+           <a href="speproduct.html">
+          <button id="details-btn" >View details</button>
+          </a>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="bed-card">
+          <span class="badge">Best seller</span>
+          <img src="img/Component 1.png" alt="Product Image">
+          <h3 style="margin-top: 5px;">Product Name</h3>
+          <p id="desc">Lorem ipsum oktiğt anöheten deciligt till</p>
+          <div class="rating">⭐⭐⭐⭐⭐ (4k)</div>
+          <div class="price">
+            <span class="old-price">$750</span>
+            <span class="new-price">$250</span>
+            <span class="now-from">$500 Now From</span>
+          </div>
+           <a href="speproduct.html">
+          <button id="details-btn" >View details</button>
+          </a>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bed-card">
+          <span class="badge">Best seller</span>
+          <img src="img/Component 1.png" alt="Product Image">
+          <h3 style="margin-top: 5px;">Product Name</h3>
+          <p id="desc">Lorem ipsum oktiğt anöheten deciligt till</p>
+          <div class="rating">⭐⭐⭐⭐⭐ (4k)</div>
+          <div class="price">
+            <span class="old-price">$750</span>
+            <span class="new-price">$250</span>
+            <span class="now-from">$500 Now From</span>
+          </div>
+           <a href="speproduct.html">
+          <button id="details-btn" >View details</button>
+          </a>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="bed-card">
+          <span class="badge">Best seller</span>
+          <img src="img/Component 1.png" alt="Product Image">
+          <h3 style="margin-top: 5px;">Product Name</h3>
+          <p id="desc">Lorem ipsum oktiğt anöheten deciligt till</p>
+          <div class="rating">⭐⭐⭐⭐⭐ (4k)</div>
+          <div class="price">
+            <span class="old-price">$750</span>
+            <span class="new-price">$250</span>
+            <span class="now-from">$500 Now From</span>
+          </div>
+           <a href="speproduct.html">
+          <button id="details-btn" >View details</button>
+          </a>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="bed-card">
+          <span class="badge">Best seller</span>
+          <img src="img/Component 1.png" alt="Product Image">
+          <h3 style="margin-top: 5px;">Product Name</h3>
+          <p id="desc">Lorem ipsum oktiğt anöheten deciligt till</p>
+          <div class="rating">⭐⭐⭐⭐⭐ (4k)</div>
+          <div class="price">
+            <span class="old-price">$750</span>
+            <span class="new-price">$250</span>
+            <span class="now-from">$500 Now From</span>
+          </div>
+          <a href="speproduct.html">
+          <button id="details-btn">View details</button></a>
+        </div>
+            
+      </div>
+    </div>
+             <a href="product.html"><button id="viewall-button" >View All</button></a> 
+  </section>
+
+
+
+ <section class="recommended-section">
+   <h2>Most Popular from <span class="highlight">King And Factory</span></h2>
+   <div class="product-scroll">
+      <div class="product-list">
+
+        <!-- Product Card 1 -->
+        <div class="bed-card">
+          <span class="badge">Best seller</span>
+          <img src="img/Component 1.png" alt="Product Image">
+          <h3 style="margin-top: 5px;">Product Name</h3>
+          <p id="desc">Lorem ipsum oktiğt anöheten deciligt till</p>
+          <div class="rating">⭐⭐⭐⭐⭐ (4k)</div>
+          <div class="price">
+            <span class="old-price">$750</span>
+            <span class="new-price">$250</span>
+            <span class="now-from">$500 Now From</span>
+          </div>
+            <a href="speproduct.html">
+          <button id="details-btn" >View details</button>
+          </a>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="bed-card">
+          <span class="badge">Best seller</span>
+          <img src="img/Component 1.png" alt="Product Image">
+          <h3 style="margin-top: 5px;">Product Name</h3>
+          <p id="desc">Lorem ipsum oktiğt anöheten deciligt till</p>
+          <div class="rating">⭐⭐⭐⭐⭐ (4k)</div>
+          <div class="price">
+            <span class="old-price">$750</span>
+            <span class="new-price">$250</span>
+            <span class="now-from">$500 Now From</span>
+          </div>
+          <a href="speproduct.html">
+          <button id="details-btn" >View details</button>
+          </a>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bed-card">
+          <span class="badge">Best seller</span>
+          <img src="img/Component 1.png" alt="Product Image">
+          <h3 style="margin-top: 5px;">Product Name</h3>
+          <p id="desc">Lorem ipsum oktiğt anöheten deciligt till</p>
+          <div class="rating">⭐⭐⭐⭐⭐ (4k)</div>
+          <div class="price">
+            <span class="old-price">$750</span>
+            <span class="new-price">$250</span>
+            <span class="now-from">$500 Now From</span>
+          </div>
+           <a href="speproduct.html">
+          <button id="details-btn" >View details</button>
+          </a>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="bed-card">
+          <span class="badge">Best seller</span>
+          <img src="img/Component 1.png" alt="Product Image">
+          <h3 style="margin-top: 5px;">Product Name</h3>
+          <p id="desc">Lorem ipsum oktiğt anöheten deciligt till</p>
+          <div class="rating">⭐⭐⭐⭐⭐ (4k)</div>
+          <div class="price">
+            <span class="old-price">$750</span>
+            <span class="new-price">$250</span>
+            <span class="now-from">$500 Now From</span>
+          </div>
+              <a href="speproduct.html">
+          <button id="details-btn" >View details</button>
+          </a>
+          
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="bed-card">
+          <span class="badge">Best seller</span>
+          <img src="img/Component 1.png" alt="Product Image">
+          <h3 style="margin-top: 5px;">Product Name</h3>
+          <p id="desc">Lorem ipsum oktiğt anöheten deciligt till</p>
+          <div class="rating">⭐⭐⭐⭐⭐ (4k)</div>
+          <div class="price">
+            <span class="old-price">$750</span>
+            <span class="new-price">$250</span>
+            <span class="now-from">$500 Now From</span>
+          </div>
+          <a href="speproduct.html">
+          <button id="details-btn" >View details</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+   </section>
+
+ <!-- the sky blue image part -->
+<div class="hero">
+  <img src="img/b37484f13eb72493aa3eb57c331c2f63734da8c8.png" alt="Hero Image" class="hero-img">
+  
+  <div class="hero-content">
+    <h1>Premiums quality & Feel Luxurious</h1>
+    <p>Lorem ipsum oktigt änoheten deciligt till preskap hände kronade. Fåbelt ikarade dikatust fasamma.</p>
+    <a href="bundle.html"><button >Shop now</button></a>
+  </div>
+</div>
+
+
+ <!-- the four yellow boxes -->
+  <h1 id="whychoose-heading">Why Choose Our Products</h1>
+<div class="four-boxes">
+  <div id="boxes">
+    <i class="fa-regular fa-truck-fast"></i>
+    <h3>Free Shipping</h3>
+    <p>Lörem ipsum bisat beroskapet och säg inte por än kare och </p>
+  </div>
+  <div id="boxes">
+    <i class="fa-solid fa-cloud-moon"></i>
+    <h3>100-Night Trial</h3>
+    <p>Lörem ipsum bisat beroskapet och säg inte por än kare och </p>
+  </div>
+  <div id="boxes">
+     <i class="fa-solid fa-medal"></i>
+    <h3>10-Year Warranty</h3>
+    <p>Lörem ipsum bisat beroskapet och säg inte por än kare och </p>
+  </div>
+  <div id="boxes">
+     <i class="fa-solid fa-leaf"></i>
+    <h3>Financing Available</h3>
+    <p>Lörem ipsum bisat beroskapet och säg inte por än kare och </p>
+  </div>
+</div>    
+
+
+ <!-- about king bed factory -->
+
+  <div class="about-backgorundimg">
+  <img src="img/589576bd7e34e7d63db748cf3ed66439592b4719 (1).png" alt="Banner">
+  <div class="about-overlay"></div>
+  <div class="about-content">
+    <h1><span class="highlight">About </span>Kings bed Factory</h1>
+    <p stle="margin-top:20px;">At Kings bed Factory, we are committed to providing you with the best night's sleep possible. Our mattresses are designed with cutting-edge technology to ensure comfort and support.</p>
+      <a href="about.html">
+    <button class="learn-button" style="margin-top: 20px;" >Learn More About Us</button></a>
+  </div>
+</div>
+
+
+ <!-- the blog part-->
+<section id="latest-blogs">
+  <h2 class="section-heading">Our Latest Blogs</h2>
+  <div class="blogs-container">
+
+    <div class="blog-card">
+      <img src="img/cf2540fabfa093372d454d4e3aa245cbd2f54505.png" alt="Blog 1">
+      <div class="blog-content">
+        <p>Lorem ipsum ocktigt änöheten deciligt till preskap hände kronade.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+
+    <div class="blog-card">
+      <img src="img/e034f03b935046c3a093fc976eb8e9578be05e15.png" alt="Blog 2">
+      <div class="blog-content">
+        <p>Lorem ipsum ocktigt änöheten deciligt till preskap hände kronade.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="img/3e0f274abac3ce4f4824c28329117ec3333ec7cd.png" alt="Blog 3">
+      <div class="blog-content">
+        <p>Lorem ipsum ocktigt änöheten deciligt till preskap hände kronade.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+
+    <div class="blog-card">
+      <img src="img/blog4.png" alt="Blog 4">
+      <div class="blog-content">
+        <p>Lorem ipsum ocktigt änöheten deciligt till preskap hände kronade.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="view-all">
+    <a href="blog.html">
+    <button >View All</button>
+    </a>
+  </div>
+</section>
+
+
+       <!-- the review part-->
+<section class="reviews-section">
+  <h2>Our customers rate us as ‘Excellent’ on Trustpilot</h2>
+     <a href="#" class="more-link">Read more Google Reviews →</a>
+  <div class="reviews-row">
+    <div class="review-card">
+      <div class="review-header">
+        <img src="img/1503552af3ff8edbe4920f25b0bb86d396f83b6d.png" alt="profile">
+        <h4>Miya Monroe</h4>
+        <div>
+        </div>
+      </div>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>sajåd hexafinar plabön. Exopes pseudogen siska hös, oritt teskap. Peböns nyböck medan nektig såsom gårast</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="img/1503552af3ff8edbe4920f25b0bb86d396f83b6d.png" alt="profile">
+        <h4>Katrina Keller</h4>
+        <div>
+        </div>
+      </div>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>sajåd hexafinar plabön. Exopes pseudogen siska hös, oritt teskap. Peböns nyböck medan nektig såsom gårast</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="img/1503552af3ff8edbe4920f25b0bb86d396f83b6d.png" alt="profile">
+           <h4>Brennan Sutton</h4>
+        <div>
+        </div>
+      </div>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>sajåd hexafinar plabön. Exopes pseudogen siska hös, oritt teskap. Peböns nyböck medan nektig såsom gårast</p>
+    </div>
+  </div>
+
+ 
+    <a href="#" class="more-link">Read more Trustpilot Reviews →</a>
+  <div class="reviews-row">
+    <div class="review-card trustpilot">
+      <div class="review-header">
+        <h4>✔ Verified</h4>
+      </div>
+      <div class="stars-trust">⭐⭐⭐⭐⭐</div>
+       <h4>Lörem ipsum grindsamhälle</h4>
+      <p>Lörem ipsum grindsamhälle sajåd hexafinar plabön...</p>
+    </div>
+
+    <div class="review-card trustpilot">
+      <div class="review-header">
+        <h4>✔ Verified</h4>
+      </div>
+      <div class="stars-trust">⭐⭐⭐⭐⭐</div>
+      <h4>Lörem ipsum grindsamhälle</h4>
+      <p>Lörem ipsum grindsamhälle sajåd hexafinar plabön...</p>
+    </div>
+
+    <div class="review-card trustpilot">
+      <div class="review-header">
+        <h4>✔ Verified</h4>
+      </div>
+      <div class="stars-trust">⭐⭐⭐⭐⭐</div>
+      <h4>Lörem ipsum grindsamhälle</h4>
+      <p>Lörem ipsum grindsamhälle sajåd hexafinar plabön...</p>
+    </div>
+  </div>
+
+  
+      <a href="#" class="more-link">More Customer Pics & Feedback →</a>
+  <div class="reviews-row">
+    <div class="review-card">
+      <div class="review-header">
+        <img src="img/1503552af3ff8edbe4920f25b0bb86d396f83b6d.png" alt="profile">
+        <h4>Miya Monroe</h4>
+      </div>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>sajåd hexafinar plabön. Exopes pseudogen siska hös...</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="img/1503552af3ff8edbe4920f25b0bb86d396f83b6d.png" alt="profile">
+        <h4>Miya Monroe</h4>
+      </div>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>sajåd hexafinar plabön. Exopes pseudogen siska hös...</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="img/1503552af3ff8edbe4920f25b0bb86d396f83b6d.png" alt="profile">
+        <h4>Miya Monroe</h4>
+      </div>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>sajåd hexafinar plabön. Exopes pseudogen siska hös...</p>
+    </div>
+  </div>
+
+ 
+</section>
+<script src="java.js"></script>
+</body>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left Column -->
+    <div class="footer-about">
+      <h1><span>About</span> Kings bed Factory</h1>
+      <p>
+        At Kings bed Factory, we are committed to providing you with the best
+        night's sleep possible. Our mattresses are designed with cutting-edge
+        technology to ensure comfort and support.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="footer-socials">
+        <a href="#"><img src="img/ic_baseline-facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="img/fa6-brands_square-x-twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="img/ri_instagram-fill.png" alt="Instagram"></a>
+      </div>
+
+      <!-- Trustpilot -->
+      <div class="trustpilot">
+        <img src="img/footerlogo.png" alt="Trustpilot" class="trustpilot-logo">
+        <div class="trustpilot-rating">
+          <img src="img/Frame 39923.png" alt="5 Stars">
+          <span>Rated</span>
+          <strong>Excellent</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle Column -->
+    <div class="footer-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Right Column -->
+    <div class="footer-contact">
+      <p><i class="fa fa-phone"></i> (476) 828-2670</p>
+      <p><i class="fa fa-map-marker"></i> 7914 Lees Creek St. Dayton, OH 45420</p>
+      <p><i class="fa fa-envelope"></i> mrdvt@hotmail.com</p>
+    </div>
+  </div>
+</footer>
+
+</html>

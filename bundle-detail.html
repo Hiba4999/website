@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kings bedstore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="bundle-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+
+    <!-- The timer part  -->
+    <div id="navbar1">
+  <div class="timer-box">
+    Time Remaining: 
+    <span class="time">
+      <span id="hours" class="big"></span>
+      <span class="small">hr</span>
+    </span>
+    <span class="time">
+      <span id="minutes" class="big"></span>
+      <span class="small">min</span>
+    </span>
+    <span class="time">
+      <span id="seconds" class="big"></span>
+      <span class="small">sec</span>
+    </span>
+  </div>
+</div>
+
+<!-- logo and search options -->
+ <div class="navbar2">
+  <div id="search">
+    <input type="text" id="user-input" placeholder="Search for your bdroom upgrade">
+     <i class="fa-solid fa-magnifying-glass" id="search-icon"></i> </div>
+     <img id="logo" src="img/Frame 1000007347.png">
+
+     <div id="right-icons">
+      <a href="#" id="openLogin"><i class="fa-regular fa-user"></i></a>
+<!-- Login Modal -->
+<div class="login-modal" id="loginModal">
+  <div class="login-box">
+    <span class="close-btn" id="closeLogin">&times;</span>
+    <div class="login-container">
+      <!-- Left Side -->
+      <div class="login-image">
+        <img src="img/Frame 1000007069.png" alt="Bed">
+      </div>
+
+      <!-- Right Side -->
+      <div class="login-form" id="loginForm">
+        <h2>Login</h2>
+
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="********" required>
+
+        <a href="#" id="toSignup">Signup</a> 
+        <button class="btn">Login</button>
+        <a href="#" id="toForgot">Forgot Password?</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="signup-modal" id="signupModal">
+  <div class="login-box">
+    <span class="close-btn" id="closeSignup">&times;</span>
+    <div class="login-container">
+      <div class="login-image">
+        <img src="img/Frame 1000007069.png" alt="Bed">
+      </div>
+
+      <div class="login-form" id="signupForm">
+        <h2>Sign Up</h2>
+
+        <label>Name</label>
+        <input type="text" placeholder="Your Name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="********" required>
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="********" required>
+
+        <button class="btn">Sign Up</button>
+        <a href="#" id="toLogin">Already have an account? Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div class="forgot-modal" id="forgotModal">
+  <div class="login-box">
+    <span class="close-btn" id="closeForgot">&times;</span>
+    <div class="login-container">
+      <div class="login-image">
+        <img src="img/Frame 1000007069.png" alt="Bed">
+      </div>
+
+      <div class="login-form" id="forgotForm">
+        <h2>Forgot Password</h2>
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com" required>
+        <button class="btn">Send Reset Link</button>
+        <a href="#" id="backToLogin1">Back to Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Change Password Modal -->
+<div class="change-modal" id="changeModal">
+  <div class="login-box">
+    <span class="close-btn" id="closeChange">&times;</span>
+    <div class="login-container">
+      <div class="login-image">
+        <img src="img/Frame 1000007069.png" alt="Bed">
+      </div>
+
+      <div class="login-form" id="changeForm">
+        <h2>Change Password</h2>
+        <label>Old Password</label>
+        <input type="password" placeholder="********" required>
+
+        <label>New Password</label>
+        <input type="password" placeholder="********" required>
+
+        <label>Confirm New Password</label>
+        <input type="password" placeholder="********" required>
+
+        <button class="btn">Change Password</button>
+        <a href="#" id="backToLogin2">Back to Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+             
+
+          <i style="margin-top: 5px;" class="fa-regular fa-heart"></i>
+           <i style="margin-top: 5px;" class="fa-solid fa-bag-shopping"></i>
+     </div>
+ </div>
+              <!-- the list of options blue navbar -->
+     <div id="navbar3">
+       <a href="index.html" class="navbarelement">Home</a>
+    <a href="product.html" class="navbarelement">Products</a>
+    <a href="bundle.html" class="navbarelement">Bundle list</a>
+    <a href="about.html" class="navbarelement">About Us</a>
+    <a href="faq.html" class="navbarelement">FAQ</a>
+     <a href="blog.html" class="navbarelement">Blogs</a>
+    <a href="referral.html" class="navbarelement">Referral</a>
+    <a href="contact.html" class="navbarelement">Contact</a>
+     </div>
+
+      <script>
+  const navbar = document.querySelector(".navbar2"); 
+  const dropdown = document.getElementById("navbar3");
+
+  navbar.addEventListener("click", (e) => {
+    // Only trigger when clicking on the leftmost 30px (where ☰ is drawn)
+    if (e.offsetX <= 30) {
+      e.stopPropagation();
+      dropdown.classList.toggle("dropdown");
+    }
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (e) => {
+    if (
+      dropdown.classList.contains("dropdown") &&
+      !dropdown.contains(e.target) &&
+      !navbar.contains(e.target)
+    ) {
+      dropdown.classList.remove("dropdown");
+    }
+  });
+</script>
+      <!-- yellow navbar -->
+  <div class="info-bar">
+  <div class="left">
+    <img src="img/trustpilot-logo-sml 1.png" alt="Trustpilot" class="trust-logo">
+    <img src="img/Frame 30.png" alt="Stars" class="stars">
+    <span class="text"><b>Rated Excellent</b></span>
+  </div>
+  <div class="right">
+    <div class="item">
+      <i class="fa-solid fa-truck"></i>
+      <span>Buy today, delivered tomorrow</span>
+    </div>
+    <div class="item">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span>Buy now & pay later available</span>
+    </div>
+    <div class="item">
+      <i class="fa-solid fa-shield"></i>
+      <span>5 Year manufacturer's guarantee</span>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+    <div class="back-btn">
+    <a href="index.html">← Back</a>
+  </div>
+
+  <div class="bundle-container">
+   
+    <!-- Left Side (Images) -->
+    <div class="bundle-images">
+      <img src="img/ae9e40dfe01094b70aadf485ec8944c1b9f64630.png" alt="Main Product" class="main-img">
+
+      <div class="thumbnail-list">
+    <img src="img/ae9e40dfe01094b70aadf485ec8944c1b9f64630.png" alt="thumb1" onclick="changeImage('img1.jpg')">
+    <img src="img/Component 1.png" alt="thumb2" onclick="changeImage('img2.jpg')">
+    <img src="img/Component 1.png" alt="thumb3" onclick="changeImage('img3.jpg')">
+    <img src="img/Component 1.png" alt="thumb4" onclick="changeImage('img4.jpg')">
+    <img src="img/Component 1.png" alt="thumb5" onclick="changeImage('img5.jpg')">
+  </div>
+    </div>
+
+    <!-- Right Side (Details) -->
+    <div class="bundle-details">
+      <h1>Bundle Name</h1>
+      <p class="desc">
+        Roktig sonade i homoadooption. Gästuckning diras for sist. Kogon plastband vulling. Epispen presesk ov.
+      </p>
+
+      <div class="price">
+        <span class="new-price">500$</span>
+        <span class="old-price">700$</span>
+      </div>
+      <p class="save">You save: 200$</p>
+
+      <button class="deal-btn">Lightning deal, 10% off, clearance sale</button>
+
+      <div class="options">
+        <div class="option">
+          <p>Choose color</p>
+          <span class="color-box black"></span>
+        </div>
+        <div class="option">
+          <p>Add a Mattress</p>
+          <span class="small-text">Save up to 10%</span>
+          <div class="quantity">
+            <button class="minus">-</button>
+            <span id="qty">1</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="add-cart">Add to Cart</button>
+        <button class="learn-more">Learn more</button>
+        <button class="wishlist">♡</button>
+      </div>
+    </div>
+
+  </div>
+          <h2 class="section-heading">Products</h2>
+<div class="product-list">
+        <!-- Product Card 1 -->
+        <div class="bed-card"  data-category="beds">
+          <span class="badge">Best seller</span>
+          <img src="img/Component 1.png" alt="Product Image">
+          <h3 style="margin-top: 5px;">Product Name</h3>
+          <p id="desc">Lorem ipsum oktiğt anöheten deciligt till</p>
+          <div class="rating">⭐⭐⭐⭐⭐ (4k)</div>
+          <div class="price">
+            <span class="old-price">$750</span>
+            <span class="new-price">$250</span>
+            <span class="now-from">$500 Now From</span>
+          </div>
+          <a href="speproduct.html">
+          <button id="details-btn">View details</button></a>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="bed-card"  data-category="kids">
+          <span class="badge">Best seller</span>
+          <img src="img/Component 1.png" alt="Product Image">
+          <h3 style="margin-top: 5px;">Product Name</h3>
+          <p id="desc">Lorem ipsum oktiğt anöheten deciligt till</p>
+          <div class="rating">⭐⭐⭐⭐⭐ (4k)</div>
+          <div class="price">
+            <span class="old-price">$750</span>
+            <span class="new-price">$250</span>
+            <span class="now-from">$500 Now From</span>
+          </div>
+          <a href="speproduct.html">
+          <button id="details-btn">View details</button></a>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bed-card"  data-category="mattresses">
+          <span class="badge">Best seller</span>
+          <img src="img/Component 1.png" alt="Product Image">
+          <h3 style="margin-top: 5px;">Product Name</h3>
+          <p id="desc">Lorem ipsum oktiğt anöheten deciligt till</p>
+          <div class="rating">⭐⭐⭐⭐⭐ (4k)</div>
+          <div class="price">
+            <span class="old-price">$750</span>
+            <span class="new-price">$250</span>
+            <span class="now-from">$500 Now From</span>
+          </div>
+          <a href="speproduct.html">
+          <button id="details-btn">View details</button></a>
+        </div>
+         <div class="bed-card"  data-category="mattresses">
+          <span class="badge">Best seller</span>
+          <img src="img/Component 1.png" alt="Product Image">
+          <h3 style="margin-top: 5px;">Product Name</h3>
+          <p id="desc">Lorem ipsum oktiğt anöheten deciligt till</p>
+          <div class="rating">⭐⭐⭐⭐⭐ (4k)</div>
+          <div class="price">
+            <span class="old-price">$750</span>
+            <span class="new-price">$250</span>
+            <span class="now-from">$500 Now From</span>
+          </div>
+          <a href="speproduct.html">
+          <button id="details-btn">View details</button></a>
+        </div>
+      </div>
+        <a href="product.html">
+          <button id="view-btn">View details</button></a>
+ 
+ 
+      <nav class="tabs">
+    <a href="#" class="tab-link active" data-tab="details">Details</a>
+    <a href="#" class="tab-link" data-tab="reviews">Reviews</a>
+    <a href="#" class="tab-link" data-tab="specs">Specifications</a>
+    <a href="#" class="tab-link" data-tab="dimensions">Dimensions</a>
+    <a href="#" class="tab-link" data-tab="delivery">Delivery & Return</a>
+    <a href="#" class="tab-link" data-tab="reasons">Reasons to Buy</a>
+  </nav>
+
+  <!-- Tab Content -->
+  <section class="tab-content">
+
+    <!-- Details -->
+    <div class="tab-pane active" id="details">
+      <h2>Details :</h2>
+      <p>This is a premium mattress designed with comfort and durability in mind. 
+      Crafted with multiple layers of memory foam for the best sleep experience.</p>
+    </div>
+
+    <!-- Reviews -->
+    <div class="tab-pane" id="reviews">
+      <h2>Reviews :</h2>
+
+      <div class="review">
+        <img src="img/profile.png" alt="Evelyn Harper">
+        <div>
+          <h4>Evelyn Harper <span>Verified Buyer</span></h4>
+          <p class="stars">★★★★★</p>
+          <p>This mattress is incredibly comfortable. I’ve had the best sleep in years!</p>
+        </div>
+      </div>
+
+      <div class="review">
+        <img src="img/profile.png" alt="Liam Turner">
+        <div>
+          <h4>Liam Turner <span>Verified Buyer</span></h4>
+          <p class="stars">★★★★☆</p>
+          <p>Great support and very durable. Highly recommend for anyone with back issues.</p>
+        </div>
+      </div>
+
+      <div class="review">
+        <img src="img/profile.png" alt="Olivia Brooks">
+        <div>
+          <h4>Olivia Brooks <span>Verified Buyer</span></h4>
+          <p class="stars">★★★★☆</p>
+          <p>A bit too firm for my liking, but overall a good quality mattress.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Specifications -->
+    <div class="tab-pane" id="specs">
+      <h2>Specifications :</h2>
+      <ul>
+        <li>Material: High-density memory foam</li>
+        <li>Thickness: 10 inches</li>
+        <li>Cover: Removable & washable</li>
+      </ul>
+    </div>
+
+    <!-- Dimensions -->
+    <div class="tab-pane" id="dimensions">
+      <h2>Dimensions :</h2>
+      <p>Available Sizes:</p>
+      <ul>
+        <li>Single: 75” x 36”</li>
+        <li>Double: 75” x 54”</li>
+        <li>Queen: 80” x 60”</li>
+        <li>King: 80” x 76”</li>
+      </ul>
+    </div>
+
+    <!-- Delivery & Return -->
+    <div class="tab-pane" id="delivery">
+      <h2>Delivery & Return :</h2>
+      <p>Free delivery within 5-7 business days. 30-day free trial with easy returns.</p>
+    </div>
+
+    <!-- Reasons to Buy -->
+    <div class="tab-pane" id="reasons">
+      <h2>Reasons to Buy :</h2 >
+      <ul>
+        <li>Improved sleep quality</li>
+        <li>Durable materials for long-term use</li>
+        <li>Affordable price with premium comfort</li>
+      </ul>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+      function changeImage(imageSrc) {
+    document.getElementById("mainImage").src = imageSrc;
+  }
+  // Quantity add/remove
+  const qty = document.getElementById("qty");
+  document.querySelector(".plus").onclick = () => qty.textContent = parseInt(qty.textContent) + 1;
+  document.querySelector(".minus").onclick = () => {
+    if (parseInt(qty.textContent) > 1) qty.textContent = parseInt(qty.textContent) - 1;
+  };
+
+  // Select all tab links and tab panes
+const tabLinks = document.querySelectorAll(".tab-link");
+const tabPanes = document.querySelectorAll(".tab-pane");
+
+tabLinks.forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    // Remove active from all links
+    tabLinks.forEach(l => l.classList.remove("active"));
+    // Add active to clicked link
+    this.classList.add("active");
+
+    // Hide all tab panes
+    tabPanes.forEach(pane => pane.classList.remove("active"));
+    // Show selected pane
+    const tabId = this.getAttribute("data-tab");
+    document.getElementById(tabId).classList.add("active");
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+<script src="java.js"></script>
+</body>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left Column -->
+    <div class="footer-about">
+      <h1><span>About</span> Kings bed Factory</h1>
+      <p>
+        At Kings bed Factory, we are committed to providing you with the best
+        night's sleep possible. Our mattresses are designed with cutting-edge
+        technology to ensure comfort and support.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="footer-socials">
+        <a href="#"><img src="img/ic_baseline-facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="img/fa6-brands_square-x-twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="img/ri_instagram-fill.png" alt="Instagram"></a>
+      </div>
+
+      <!-- Trustpilot -->
+      <div class="trustpilot">
+        <img src="img/footerlogo.png" alt="Trustpilot" class="trustpilot-logo">
+        <div class="trustpilot-rating">
+          <img src="img/Frame 39923.png" alt="5 Stars">
+          <span>Rated</span>
+          <strong>Excellent</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle Column -->
+    <div class="footer-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Right Column -->
+    <div class="footer-contact">
+      <p><i class="fa fa-phone"></i> (476) 828-2670</p>
+      <p><i class="fa fa-map-marker"></i> 7914 Lees Creek St. Dayton, OH 45420</p>
+      <p><i class="fa fa-envelope"></i> mrdvt@hotmail.com</p>
+    </div>
+  </div>
+</footer>
+
+</html>

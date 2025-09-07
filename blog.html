@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kings bedstore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+
+    <!-- The timer part  -->
+    <div id="navbar1">
+  <div class="timer-box">
+    Time Remaining: 
+    <span class="time">
+      <span id="hours" class="big"></span>
+      <span class="small">hr</span>
+    </span>
+    <span class="time">
+      <span id="minutes" class="big"></span>
+      <span class="small">min</span>
+    </span>
+    <span class="time">
+      <span id="seconds" class="big"></span>
+      <span class="small">sec</span>
+    </span>
+  </div>
+</div>
+
+<!-- logo and search options -->
+ <div class="navbar2">
+  <div id="search">
+    <input type="text" id="user-input" placeholder="Search for your bdroom upgrade">
+     <i class="fa-solid fa-magnifying-glass" id="search-icon"></i> </div>
+     <img id="logo" src="img/Frame 1000007347.png">
+
+     <div id="right-icons">
+      <a href="#" id="openLogin"><i class="fa-regular fa-user"></i></a>
+<!-- Login Modal -->
+<div class="login-modal" id="loginModal">
+  <div class="login-box">
+    <span class="close-btn" id="closeLogin">&times;</span>
+    <div class="login-container">
+      <!-- Left Side -->
+      <div class="login-image">
+        <img src="img/Frame 1000007069.png" alt="Bed">
+      </div>
+
+      <!-- Right Side -->
+      <div class="login-form" id="loginForm">
+        <h2>Login</h2>
+
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="********" required>
+
+        <a href="#" id="toSignup">Signup</a> 
+        <button class="btn">Login</button>
+        <a href="#" id="toForgot">Forgot Password?</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="signup-modal" id="signupModal">
+  <div class="login-box">
+    <span class="close-btn" id="closeSignup">&times;</span>
+    <div class="login-container">
+      <div class="login-image">
+        <img src="img/Frame 1000007069.png" alt="Bed">
+      </div>
+
+      <div class="login-form" id="signupForm">
+        <h2>Sign Up</h2>
+
+        <label>Name</label>
+        <input type="text" placeholder="Your Name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="********" required>
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="********" required>
+
+        <button class="btn">Sign Up</button>
+        <a href="#" id="toLogin">Already have an account? Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div class="forgot-modal" id="forgotModal">
+  <div class="login-box">
+    <span class="close-btn" id="closeForgot">&times;</span>
+    <div class="login-container">
+      <div class="login-image">
+        <img src="img/Frame 1000007069.png" alt="Bed">
+      </div>
+
+      <div class="login-form" id="forgotForm">
+        <h2>Forgot Password</h2>
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com" required>
+        <button class="btn">Send Reset Link</button>
+        <a href="#" id="backToLogin1">Back to Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Change Password Modal -->
+<div class="change-modal" id="changeModal">
+  <div class="login-box">
+    <span class="close-btn" id="closeChange">&times;</span>
+    <div class="login-container">
+      <div class="login-image">
+        <img src="img/Frame 1000007069.png" alt="Bed">
+      </div>
+
+      <div class="login-form" id="changeForm">
+        <h2>Change Password</h2>
+        <label>Old Password</label>
+        <input type="password" placeholder="********" required>
+
+        <label>New Password</label>
+        <input type="password" placeholder="********" required>
+
+        <label>Confirm New Password</label>
+        <input type="password" placeholder="********" required>
+
+        <button class="btn">Change Password</button>
+        <a href="#" id="backToLogin2">Back to Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+             
+
+          <i style="margin-top: 5px;" class="fa-regular fa-heart"></i>
+           <i style="margin-top: 5px;" class="fa-solid fa-bag-shopping"></i>
+     </div>
+ </div>
+              <!-- the list of options blue navbar -->
+     <div id="navbar3">
+       <a href="index.html" class="navbarelement">Home</a>
+    <a href="product.html" class="navbarelement">Products</a>
+    <a href="bundle.html" class="navbarelement">Bundle list</a>
+    <a href="about.html" class="navbarelement">About Us</a>
+    <a href="faq.html" class="navbarelement">FAQ</a>
+     <a href="blog.html" class="navbarelement">Blogs</a>
+    <a href="referral.html" class="navbarelement">Referral</a>
+    <a href="contact.html" class="navbarelement">Contact</a>
+     </div>
+               <script>
+  const navbar = document.querySelector(".navbar2"); 
+  const dropdown = document.getElementById("navbar3");
+
+  navbar.addEventListener("click", (e) => {
+    // Only trigger when clicking on the leftmost 30px (where ☰ is drawn)
+    if (e.offsetX <= 30) {
+      e.stopPropagation();
+      dropdown.classList.toggle("dropdown");
+    }
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (e) => {
+    if (
+      dropdown.classList.contains("dropdown") &&
+      !dropdown.contains(e.target) &&
+      !navbar.contains(e.target)
+    ) {
+      dropdown.classList.remove("dropdown");
+    }
+  });
+</script>
+      <!-- yellow navbar -->
+  <div class="info-bar">
+  <div class="left">
+    <img src="img/trustpilot-logo-sml 1.png" alt="Trustpilot" class="trust-logo">
+    <img src="img/Frame 30.png" alt="Stars" class="stars">
+    <span class="text"><b>Rated Excellent</b></span>
+  </div>
+  <div class="right">
+    <div class="item">
+      <i class="fa-solid fa-truck"></i>
+      <span>Buy today, delivered tomorrow</span>
+    </div>
+    <div class="item">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span>Buy now & pay later available</span>
+    </div>
+    <div class="item">
+      <i class="fa-solid fa-shield"></i>
+      <span>5 Year manufacturer's guarantee</span>
+    </div>
+  </div>
+</div>
+</header>
+<body>
+
+
+<section id="latest-blogs">
+  <h2 class="section-heading">Our Latest Blogs</h2>
+
+  <!-- Filter Buttons -->
+  <div class="blog-filters">
+    <button class="filter-btn active" data-filter="beds">Beds Blog</button>
+    <button class="filter-btn" data-filter="kids">Kids beds Blogs</button>
+    <button class="filter-btn" data-filter="furniture">Furniture Blogs</button>
+    <button class="filter-btn" data-filter="mattresses">Mattresses Blog</button>
+  </div>
+
+  <!-- Blogs -->
+  <div class="blogs-container">
+
+    <div class="blog-card" data-category="beds">
+      <img src="img/cf2540fabfa093372d454d4e3aa245cbd2f54505.png" alt="Blog 1">
+      <div class="blog-content">
+        <p>Lorem ipsum beds blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="kids">
+      <img src="img/e034f03b935046c3a093fc976eb8e9578be05e15.png" alt="Blog 2">
+      <div class="blog-content">
+        <p>Lorem ipsum kids blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="furniture">
+      <img src="img/3e0f274abac3ce4f4824c28329117ec3333ec7cd.png" alt="Blog 3">
+      <div class="blog-content">
+        <p>Lorem ipsum furniture blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="mattresses">
+      <img src="img/blog4.png" alt="Blog 4">
+      <div class="blog-content">
+        <p>Lorem ipsum mattresses blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="beds">
+      <img src="img/cf2540fabfa093372d454d4e3aa245cbd2f54505.png" alt="Blog 1">
+      <div class="blog-content">
+        <p>Lorem ipsum beds blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="kids">
+      <img src="img/e034f03b935046c3a093fc976eb8e9578be05e15.png" alt="Blog 2">
+      <div class="blog-content">
+        <p>Lorem ipsum kids blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="furniture">
+      <img src="img/3e0f274abac3ce4f4824c28329117ec3333ec7cd.png" alt="Blog 3">
+      <div class="blog-content">
+        <p>Lorem ipsum furniture blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="mattresses">
+      <img src="img/blog4.png" alt="Blog 4">
+      <div class="blog-content">
+        <p>Lorem ipsum mattresses blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="beds">
+      <img src="img/cf2540fabfa093372d454d4e3aa245cbd2f54505.png" alt="Blog 1">
+      <div class="blog-content">
+        <p>Lorem ipsum beds blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="kids">
+      <img src="img/e034f03b935046c3a093fc976eb8e9578be05e15.png" alt="Blog 2">
+      <div class="blog-content">
+        <p>Lorem ipsum kids blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="furniture">
+      <img src="img/3e0f274abac3ce4f4824c28329117ec3333ec7cd.png" alt="Blog 3">
+      <div class="blog-content">
+        <p>Lorem ipsum furniture blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="mattresses">
+      <img src="img/blog4.png" alt="Blog 4">
+      <div class="blog-content">
+        <p>Lorem ipsum mattresses blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="beds">
+      <img src="img/cf2540fabfa093372d454d4e3aa245cbd2f54505.png" alt="Blog 1">
+      <div class="blog-content">
+        <p>Lorem ipsum beds blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="kids">
+      <img src="img/e034f03b935046c3a093fc976eb8e9578be05e15.png" alt="Blog 2">
+      <div class="blog-content">
+        <p>Lorem ipsum kids blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="furniture">
+      <img src="img/3e0f274abac3ce4f4824c28329117ec3333ec7cd.png" alt="Blog 3">
+      <div class="blog-content">
+        <p>Lorem ipsum furniture blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+
+    <div class="blog-card" data-category="beds">
+      <img src="img/cf2540fabfa093372d454d4e3aa245cbd2f54505.png" alt="Blog 1">
+      <div class="blog-content">
+        <p>Lorem ipsum beds blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="kids">
+      <img src="img/e034f03b935046c3a093fc976eb8e9578be05e15.png" alt="Blog 2">
+      <div class="blog-content">
+        <p>Lorem ipsum kids blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="furniture">
+      <img src="img/3e0f274abac3ce4f4824c28329117ec3333ec7cd.png" alt="Blog 3">
+      <div class="blog-content">
+        <p>Lorem ipsum furniture blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+
+    <div class="blog-card" data-category="beds">
+      <img src="img/cf2540fabfa093372d454d4e3aa245cbd2f54505.png" alt="Blog 1">
+      <div class="blog-content">
+        <p>Lorem ipsum beds blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="kids">
+      <img src="img/e034f03b935046c3a093fc976eb8e9578be05e15.png" alt="Blog 2">
+      <div class="blog-content">
+        <p>Lorem ipsum kids blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="furniture">
+      <img src="img/3e0f274abac3ce4f4824c28329117ec3333ec7cd.png" alt="Blog 3">
+      <div class="blog-content">
+        <p>Lorem ipsum furniture blog example.</p>
+        <a href="blog-detail.html">Read the blog</a>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+
+</body>
+    
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h1><span>About</span> Kings bed Factory</h1>
+      <p>
+        At Kings bed Factory, we are committed to providing you with the best
+        night's sleep possible. Our mattresses are designed with cutting-edge
+        technology to ensure comfort and support.
+      </p>
+
+    
+      <div class="footer-socials">
+        <a href="#"><img src="img/ic_baseline-facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="img/fa6-brands_square-x-twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="img/ri_instagram-fill.png" alt="Instagram"></a>
+      </div>
+
+     
+      <div class="trustpilot">
+        <img src="img/footerlogo.png" alt="Trustpilot" class="trustpilot-logo">
+        <div class="trustpilot-rating">
+          <img src="img/Frame 39923.png" alt="5 Stars">
+          <span>Rated</span>
+          <strong>Excellent</strong>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="footer-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+ 
+    <div class="footer-contact">
+      <p><i class="fa fa-phone"></i> (476) 828-2670</p>
+      <p><i class="fa fa-map-marker"></i> 7914 Lees Creek St. Dayton, OH 45420</p>
+      <p><i class="fa fa-envelope"></i> mrdvt@hotmail.com</p>
+    </div>
+  </div>
+</footer>
+
+<script src="java.js"></script>
+</html>
